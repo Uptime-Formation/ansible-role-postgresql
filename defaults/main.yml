@@ -33,6 +33,8 @@ postgresql_hba_entries:
 postgresql_locales:
   - 'en_US.UTF-8'
 
+postgresql_manage_databases: no
+
 # Databases to ensure exist.
 postgresql_databases: []
 # - name: exampledb # required; the rest are optional
@@ -47,6 +49,8 @@ postgresql_databases: []
 #   port: # defaults to not set
 #   owner: # defaults to postgresql_user
 #   state: # defaults to 'present'
+
+postgresql_manage_users: no
 
 # Users to ensure exist.
 postgresql_users: []
